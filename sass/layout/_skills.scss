@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 }
 
-.skills-list-item {
+.skills-list__item {
   width: 270px;
 
   & + & {
@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-.skills-container-item {
+.skills-list__container {
   width: 270px;
   height: 120px;
   display: flex;
@@ -28,19 +28,13 @@
   margin-bottom: 30px;
 }
 
-.skills-list-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+.skills-list__title {
+  @include font(14px, 1.14, 700, 0.03em);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.skills-list-paragraph {
+.skills-list__paragraph {
   color: var(--secondary-text-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.7, 400, 0.03em);
 }

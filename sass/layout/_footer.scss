@@ -6,7 +6,7 @@
   display: flex;
 }
 
-.social-nav-footer {
+.footer__social-nav {
   width: 206px;
   height: 80px;
   margin-top: 12px;
@@ -15,12 +15,9 @@
   margin-left: 70px;
 }
 
-.footer-social-title {
+.footer__social-title {
+  @include font(14px, 1.14, 700, 0.03em);
   margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   display: inline-flex;
@@ -29,15 +26,15 @@
 .footer-social-list {
   display: flex;
 }
-.footer-social-icon {
+.footer-social__icon {
   fill: #ffffff;
 }
 
-.footer-social-item + .footer-social-item {
+.footer-social__item + .footer-social__item {
   margin-left: 10px;
 }
 
-.footer-social-link {
+.footer-social__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -53,47 +50,15 @@
   }
 }
 
-.logo-footer {
+.footer-nav__logo {
   margin-bottom: 20px;
 }
 
-.nav-link-down .item {
+.footer-adress__text {
   margin-bottom: 9px;
-}
-.address-footer {
-  margin-bottom: 9px;
-}
-/*характеристики шрифта логотипа*/
-.logo-title-up {
-  color: var(--primary-text-color);
-  font-family: Raleway, sans-serif;
+  color: var(--white-text-color);
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-/*назначение цвета первых букв логотипа сверху*/
-.logo-letters-up {
-  color: var(--accent-color);
-}
-
-/*панель навигации*/
-.nav-list .link {
-  color: var(--primary-text-color);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-/*панель ссылок хедера*/
-.nav-link .link {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 1.7, 400, 0.03em);
 }
 
 .footer {
@@ -104,25 +69,18 @@
   color: var(--accent-color);
 }
 
-.logo-title-down {
+.footer-nav__link-down {
   color: var(--white-text-color);
   font-family: Raleway, sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  @include font(26px, 1.2, 700, 0.03em);
 }
 
-/*назначение характеристик строке адреса*/
-.address-font p {
-  color: var(--white-text-color);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+.footer-nav-list__item {
+  margin-bottom: 9px;
 }
 
-.nav-link-down a {
+.footer-nav-list__link {
   text-decoration: none;
   list-style: none;
   font-style: normal;
@@ -133,18 +91,14 @@
   color: var(--white-text-color);
 }
 
-.subscribe-area {
+.footer__subscribe-area {
   margin-left: 93px;
   margin-top: 12px;
 }
 
-.subscibe-area-title {
+.footer__subscribe-area-title {
   margin-bottom: 20px;
-
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 700, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
   display: inline-flex;
@@ -153,7 +107,7 @@
 .subscibe-form {
   display: flex;
 }
-.subscribe-input {
+.subscribe-form__input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -171,12 +125,11 @@
   /*   border: transparent; */
 }
 
-.subscribe-input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
+.subscribe-form__input::placeholder {
+  @include font(16px, 1.25, 400, 0.03em);
 }
 
-.subscribe-btn {
+.subscribe-form__btn {
   margin-left: 12px;
 
   padding-top: 10px;
@@ -192,11 +145,9 @@
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
+  @include font(16px, 1.9, 700, 0.03em);
   border: transparent;
 }
-.send-icon {
+.subscribe-form__icon {
   margin-left: 10px;
 }
