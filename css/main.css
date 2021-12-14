@@ -181,7 +181,7 @@ body {
   margin-right: 10px;
 }
 
-.header-portfolio {
+.header--portfolio {
   border-bottom: 1px solid #ececec;
 }
 
@@ -215,23 +215,6 @@ body {
   text-transform: uppercase;
   display: flex;
   margin-bottom: 30px;
-}
-
-.hero-container__button {
-  width: 200px;
-  height: 50px;
-  background-color: var(--accent-color);
-  font-size: 16px;
-  line-height: 1.87;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 10px auto;
-  border: transparent;
-  cursor: pointer;
 }
 
 .skills-section {
@@ -555,7 +538,7 @@ body {
   background-color: var(--footer-bg-color);
 }
 
-.logo-letters-down {
+.logo-letters--down {
   color: var(--accent-color);
 }
 
@@ -626,27 +609,6 @@ body {
   line-height: 1.25;
   font-weight: 400;
   letter-spacing: 0.03em;
-}
-
-.subscribe-form__btn {
-  margin-left: 12px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  background-color: var(--accent-color);
-  color: #ffffff;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.9;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  border: transparent;
 }
 
 .subscribe-form__icon {
@@ -839,5 +801,43 @@ body {
 
 .modal__close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-container__button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px auto;
+  border: transparent;
+  cursor: pointer;
+}
+
+.subscribe-form__btn {
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border: transparent;
 }
 /*# sourceMappingURL=main.css.map */
